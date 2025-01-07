@@ -8,6 +8,10 @@ body {
     --logo-header-color: white;
     --logo-footer-color: black;
 
+    --button-color: #ffffff00;
+    --button-border-color-1: white;
+    --button-border-color-2: black;
+
 }
 
 /* headings */
@@ -40,4 +44,34 @@ a {
     &:hover {
         border-bottom: 1px solid black;
     }
+}
+
+/* button bij witte achtergrond */
+.all-experiences-button  {
+    border-radius: 20px;
+    border: 2px solid var(--button-border-color-2);
+    height: 2.5em;
+    width: 20em;
+    background-color: var(--button-color);
+    letter-spacing: 1px;
+    font-size: medium;
+    font-weight: 500;
+    
+}
+
+/* button bij gekleurde achtergrond */
+.header-button  {
+    border-radius: 20px;
+    border: 2px solid var(--button-border-color-1);
+    height: 3em;
+    width: 12em;
+    background-color: var(--button-color);
+    letter-spacing: 1px;
+    font-size: small;
+    font-weight: 500;
+    
+}
+
+header {
+    background-color: #008273;
 }
