@@ -1,0 +1,43 @@
+body {
+
+    /* colors */
+    --background-color-1: #E22146;
+    --background-color-2: #F3F1E9;
+    --background-color-3: #008273;
+
+    --logo-header-color: white;
+    --logo-footer-color: black;
+
+}
+
+/* headings */
+h2 {
+    font-family: gilroy;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: gilroy;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: gilroy;
+    font-size: 15px;
+}
+
+
+p {
+    font-family: gilroy;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    color: black;
+
+    &:hover {
+        border-bottom: 1px solid black;
+    }
+}
