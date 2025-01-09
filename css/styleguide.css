@@ -3,6 +3,8 @@ body {
   --background-color-1: #d92b4d;
   --background-color-2: #f3f1e9;
   --background-color-3: #008273;
+  --background-color-4: #416AD9;
+
 
   --logo-header-color: white;
   --logo-footer-color: black;
@@ -12,17 +14,23 @@ body {
   --button-border-color-2: black;
   --button-hover-color: #0000003c;
 
-  --media-button-hover: 0 0 20px rgba(255, 255, 255, 0.873); 
-
+  --shadow-button-hover: 0 0 15px rgb(244, 196, 196);
 
   /* fonts colors */
   --font-color-colored-bg: #fff;
   --font-color-white-bg: #190b34;
+
+  --anker-hover-effect: 2px solid rgb(0, 0, 0);
 }
 
-/* h2 heading content block 2 */
+/* h2 headings fonts */
 @font-face {
-  font-family: "gilroy h2";
+  font-family: "gilroy heading";
+  src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
+}
+
+@font-face {
+  font-family: "gilroy anker";
   src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
 }
 
@@ -32,51 +40,50 @@ body {
   src: url(/Assets/fonts/gilroy/gilroy-regular.woff2);
 }
 
+/* the round buttons font like the experience button */
+@font-face {
+  font-family: "gilroy button";
+  src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
+}
+
 /* headings */
 h2 {
-  font-family: "gilroy h2";
+  font-family: "gilroy heading";
   font-size: 40px;
-  color: var(--font-color-colored-bg);
 }
 
 h3 {
-  font-family: gilroy;
-  font-size: 30px;
+  font-family: "gilroy heading";
+  font-size: 35px;
 }
 
 h4 {
-  font-family: gilroy;
-  font-size: 15px;
+  font-family: "gilroy heading";
+  font-size: 22px;
 }
 
 p {
   font-family: "gilroy p";
   font-size: larger;
-  letter-spacing: 2px;
-
-  color: var(--font-color-colored-bg);
+  letter-spacing: 1px;
 }
 
 a {
+  font-family: "gilroy anker";
   text-decoration: none;
   border: none;
-  color: black;
-
-  &:hover {
-    border-bottom: 1px solid black;
-  }
+  letter-spacing: 2px;
+  color: var(--font-color-white-bg);
 }
 
 /* button bij witte achtergrond */
 .all-experiences-button {
-  border-radius: 20px;
+  font-family: "gilroy button";
+  border-radius: 30px;
   border: 2px solid var(--button-border-color-2);
-  height: 2.5em;
-  width: 20em;
   background-color: var(--button-color);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: medium;
-  font-weight: 500;
 }
 
 /* button bij gekleurde achtergrond */
@@ -89,7 +96,7 @@ a {
   letter-spacing: 2px;
   font-size: medium;
   font-weight: 500;
-  color: white;
+  color: var(--font-color-colored-bg);
 
   &:hover {
     background-color: var(--button-hover-color);
@@ -106,9 +113,8 @@ a {
   cursor: pointer;
 
   &:hover {
-    box-shadow: var(--media-button-hover);
-
-}
+    box-shadow: var(--shadow-button-hover);
+  }
 }
 
 header {
