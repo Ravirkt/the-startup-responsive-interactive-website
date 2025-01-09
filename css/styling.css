@@ -1,77 +1,55 @@
-body {
-
-    /* colors */
-    --background-color-1: #E22146;
-    --background-color-2: #F3F1E9;
-    --background-color-3: #008273;
-
-    --logo-header-color: white;
-    --logo-footer-color: black;
-
-    --button-color: #ffffff00;
-    --button-border-color-1: white;
-    --button-border-color-2: black;
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* headings */
-h2 {
-    font-family: gilroy;
-    font-size: 40px;
-}
-
-h3 {
-    font-family: gilroy;
-    font-size: 30px;
-}
-
-h4 {
-    font-family: gilroy;
-    font-size: 15px;
-}
-
-
-p {
-    font-family: gilroy;
-    font-size: small;
-}
-
-a {
-    text-decoration: none;
-    border: none;
-    color: black;
-
-    &:hover {
-        border-bottom: 1px solid black;
-    }
-}
-
-/* button bij witte achtergrond */
-.all-experiences-button  {
-    border-radius: 20px;
-    border: 2px solid var(--button-border-color-2);
-    height: 2.5em;
-    width: 20em;
-    background-color: var(--button-color);
-    letter-spacing: 1px;
-    font-size: medium;
-    font-weight: 500;
-    
-}
-
-/* button bij gekleurde achtergrond */
-.header-button  {
-    border-radius: 20px;
-    border: 2px solid var(--button-border-color-1);
-    height: 3em;
-    width: 12em;
-    background-color: var(--button-color);
-    letter-spacing: 1px;
-    font-size: small;
-    font-weight: 500;
-    
-}
-
+/* content block 1 */
 header {
-    background-color: #008273;
+  height: 80vh;
+  padding-left: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25em 5em 10em;
+  gap: 0.5em;
+}
+
+.header-title {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  padding-top: 3em;
+}
+
+.header-paragraph {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  padding-right: 1em;
+}
+
+.header-button {
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+}
+
+/* nu hidden komt pas op grotere schermen tevorschijn */
+.header-image {
+  visibility: hidden;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.media-button {
+  grid-column: 2;
+  grid-row: 3;
+  height: 4em;
+  width: 4em;
+  justify-self: flex-end;
+  align-self: last baseline;
+  margin-right: 1em;
+  
+}
+
+.media-loader {
+    
 }
