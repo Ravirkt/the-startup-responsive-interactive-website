@@ -1,0 +1,116 @@
+body {
+  /* colors */
+  --background-color-1: #d92b4d;
+  --background-color-2: #f3f1e9;
+  --background-color-3: #008273;
+
+  --logo-header-color: white;
+  --logo-footer-color: black;
+
+  --button-color: #ffffff00;
+  --button-border-color-1: white;
+  --button-border-color-2: black;
+  --button-hover-color: #0000003c;
+
+  --media-button-hover: 0 0 20px rgba(255, 255, 255, 0.873); 
+
+
+  /* fonts colors */
+  --font-color-colored-bg: #fff;
+  --font-color-white-bg: #190b34;
+}
+
+/* h2 heading content block 2 */
+@font-face {
+  font-family: "gilroy h2";
+  src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
+}
+
+/* paragraphs */
+@font-face {
+  font-family: "gilroy p";
+  src: url(/Assets/fonts/gilroy/gilroy-regular.woff2);
+}
+
+/* headings */
+h2 {
+  font-family: "gilroy h2";
+  font-size: 40px;
+  color: var(--font-color-colored-bg);
+}
+
+h3 {
+  font-family: gilroy;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: gilroy;
+  font-size: 15px;
+}
+
+p {
+  font-family: "gilroy p";
+  font-size: larger;
+  letter-spacing: 2px;
+
+  color: var(--font-color-colored-bg);
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  color: black;
+
+  &:hover {
+    border-bottom: 1px solid black;
+  }
+}
+
+/* button bij witte achtergrond */
+.all-experiences-button {
+  border-radius: 20px;
+  border: 2px solid var(--button-border-color-2);
+  height: 2.5em;
+  width: 20em;
+  background-color: var(--button-color);
+  letter-spacing: 1px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+/* button bij gekleurde achtergrond */
+.header-button {
+  border-radius: 30px;
+  border: 2px solid var(--button-border-color-1);
+  height: 3.5em;
+  width: 12em;
+  background-color: var(--button-color);
+  letter-spacing: 2px;
+  font-size: medium;
+  font-weight: 500;
+  color: white;
+
+  &:hover {
+    background-color: var(--button-hover-color);
+    cursor: pointer;
+  }
+}
+
+.media-button {
+  border-radius: 100%;
+  background-color: var(--font-color-colored-bg);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--media-button-hover);
+
+}
+}
+
+header {
+  background-color: var(--background-color-1);
+}
