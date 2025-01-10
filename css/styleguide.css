@@ -11,14 +11,14 @@ body {
   --logo-footer-color: black;
 
   --button-color: #ffffff00;
-  --button-border-color-1: white;
-  --button-border-color-2: black;
+  --button-border-color-1: #ffff;
+  --button-border-color-2: #0000;
   --button-hover-color: #0000003c;
 
   --shadow-button-hover: 0 0 5px rgb(74, 74, 74);
 
   /* fonts colors */
-  --font-color-colored-bg: #fff;
+  --font-color-colored-bg: #ffff;
   --font-color-white-bg: #190b34;
   --font-color-subtext: #706a7c;
 

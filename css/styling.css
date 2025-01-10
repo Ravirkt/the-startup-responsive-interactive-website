@@ -62,7 +62,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 3px solid var(--background-color-1);
+  border: 3px solid var(--bg-color-1);
   border-top: 3px solid rgb(255, 242, 0);
   border-radius: 100%;
   animation: progress 2s linear infinite;
@@ -89,7 +89,7 @@ header {
   padding-right: 1em;
   padding-left: 1.5em;
   color: var(--font-color-white-bg);
-  background-color: var(--background-color-2);
+  background-color: var(--bg-color-2);
 }
 
 .content-block-3-title {
@@ -120,7 +120,7 @@ header {
   grid-template-columns: repeat(1, 1fr);
   padding-left: 1.5em;
   padding-right: 1.5em;
-  background-color: var(--background-color-2);
+  background-color: var(--bg-color-2);
   gap: 2em;
   padding-bottom: 3em;
 }
@@ -168,7 +168,7 @@ header {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 5em 15em 5em;
-  background-color: var(--background-color-4);
+  background-color: var(--bg-color-4);
 
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -211,7 +211,7 @@ header {
   padding-right: 1em;
   padding-left: 1.5em;
   color: var(--font-color-white-bg);
-  background-color: var(--background-color-2);
+  background-color: var(--bg-color-2);
   gap: 1em;
 }
 
@@ -244,7 +244,7 @@ header {
   grid-template-columns: repeat(1, 1fr);
   padding-left: 1.5em;
   padding-right: 1.5em;
-  background-color: var(--background-color-2);
+  background-color: var(--bg-color-2);
   gap: 2em;
   padding-bottom: 3em;
 }
@@ -311,7 +311,7 @@ header {
 
 
 .content-block-8 {
-    background-color: var(--background-color-5);
+    background-color: var(--bg-color-5);
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
