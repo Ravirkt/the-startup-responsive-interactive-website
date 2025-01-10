@@ -102,14 +102,14 @@ header {
   grid-row: 2;
 }
 
-.content-block-3-anker {
+.content-block-3-anchor {
   grid-column: 1;
   grid-row: 3;
   width: fit-content;
   align-self: last baseline;
 
   &:hover {
-    border-bottom: var(--anker-hover-effect);
+    border-bottom: var(--anchor-hover-effect);
   }
 }
 
@@ -145,7 +145,7 @@ header {
   padding-top: 0.5em;
 }
 
-.experience-anker:hover {
+.experience-anchor:hover {
   transform: scale(1.01);
   transition: 0.3s ease-in-out;
   box-shadow: var(--shadow-button-hover);
@@ -225,14 +225,14 @@ header {
   grid-row: 2;
 }
 
-.content-block-6-anker {
+.content-block-6-anchor {
   grid-column: 1;
   grid-row: 3;
   width: fit-content;
   align-self: last baseline;
 
   &:hover {
-    border-bottom: var(--anker-hover-effect);
+    border-bottom: var(--anchor-hover-effect);
   }
 }
 
@@ -272,7 +272,7 @@ header {
   padding-top: 0.5em;
 }
 
-.content-anker:hover {
+.content-anchor:hover {
   transform: scale(1.01);
   transition: 0.3s ease-in-out;
   box-shadow: var(--shadow-button-hover);
@@ -315,7 +315,7 @@ header {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row: auto;
+    grid-template-rows: repeat(5, 10em), ;
     padding-left: 1.5em;
     padding-right: 1.5em;
 }

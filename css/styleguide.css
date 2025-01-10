@@ -22,7 +22,7 @@ body {
   --font-color-white-bg: #190b34;
   --font-color-subtext: #706a7c;
 
-  --anker-hover-effect: 2px solid rgb(0, 0, 0);
+  --anchor-hover-effect: 2px solid rgb(0, 0, 0);
 
   --publisher-figure-color: #FF335A;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 @font-face {
-  font-family: "gilroy anker";
+  font-family: "gilroy anchor";
   src: url(./Assets/fonts/gilroy/gilroy-bold.woff2);
 }
 
@@ -94,7 +94,7 @@ p {
 }
 
 a {
-  font-family: "gilroy anker";
+  font-family: "gilroy anchor";
   text-decoration: none;
   border: none;
   letter-spacing: 2px;
