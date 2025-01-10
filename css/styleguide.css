@@ -79,12 +79,12 @@ h4 {
 
 h5 {
     font-family: "gilroy heading";
-    font-size: small;
+    font-size: 12px;
 }
 
 time {
     font-family: "gilroy timestamp";
-    font-size: x-small;
+    font-size: 10px;
 }
 
 p {
@@ -103,7 +103,7 @@ a {
 
 figcaption {
   font-family: "gilroy figcaption";
-  font-size: small;
+  font-size: 14px;
   letter-spacing: 2px;
   color: var(--font-color-subtext);
 }
