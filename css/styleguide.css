@@ -119,9 +119,13 @@ figcaption {
 
   &:hover {
     transform: scale(1.01);
-    cursor: pointer;
   }
 }
+
+button {
+  cursor: pointer;
+}
+
 
 /* button bij gekleurde achtergrond */
 .header-button {
@@ -135,17 +139,16 @@ figcaption {
 
   &:hover {
     background-color: var(--button-hover-color);
-    cursor: pointer;
   }
 }
 
+/* media button play/pauze */
 .media-button {
   border-radius: 100%;
   background-color: var(--font-color-colored-bg);
   border: none;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 
   &:hover {
     box-shadow: var(--shadow-button-hover);
