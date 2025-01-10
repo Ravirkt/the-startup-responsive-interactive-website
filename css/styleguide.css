@@ -115,7 +115,7 @@ figcaption {
   border: 2px solid var(--button-border-color-2);
   background-color: var(--button-color);
   letter-spacing: 2px;
-  font-size: medium;
+  font-size: 15px;
 
   &:hover {
     transform: scale(1.01);
@@ -133,7 +133,7 @@ button {
   border: 2px solid var(--button-border-color-1);
   background-color: var(--button-color);
   letter-spacing: 2px;
-  font-size: medium;
+  font-size: 15px;
   font-weight: 500;
   color: var(--font-color-colored-bg);
 
