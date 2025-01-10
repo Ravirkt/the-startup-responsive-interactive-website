@@ -1,10 +1,10 @@
 body {
   /* colors */
-  --background-color-1: #d92b4d;
-  --background-color-2: #f3f1e9;
-  --background-color-3: #008273;
-  --background-color-4: #416ad9;
-  --background-color-5: #008273;
+  --bg-color-1: #d92b4d;
+  --bg-color-2: #f3f1e9;
+  --bg-color-3: #008273;
+  --bg-color-4: #416ad9;
+  --bg-color-5: #008273;
 
 
   --logo-header-color: white;
@@ -156,5 +156,5 @@ button {
 }
 
 header {
-  background-color: var(--background-color-1);
+  background-color: var(--bg-color-1);
 }
