@@ -66,6 +66,10 @@ body {
     src: url(/Assets/fonts/gilroy/gilroy-ultra-light.woff2);
   }
 
+
+
+
+
 /* headings */
 h2 {
   font-family: "gilroy heading";
@@ -108,6 +112,10 @@ a {
   color: var(--font-color-white-bg);
 }
 
+li {
+  list-style-type: none;
+}
+
 figcaption {
   font-family: "gilroy figcaption";
   font-size: 14px;
@@ -120,7 +128,6 @@ figcaption {
   font-size: 15px;
   line-height: 1.6;
 }
-
 
 
 /* button bij witte achtergrond */
@@ -141,6 +148,13 @@ button {
   cursor: pointer;
 }
 
+
+address {
+font-size: 12px;
+font-family: "gilroy timestamp";
+
+
+}
 
 /* button bij gekleurde achtergrond */
 .button-basic {
