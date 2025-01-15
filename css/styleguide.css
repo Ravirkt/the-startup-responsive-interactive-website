@@ -12,7 +12,7 @@ body {
 
   --button-color: #ffffff00;
   --button-border-color-1: #ffff;
-  --button-border-color-2: #0000;
+  --button-border-color-2: #000000;
   --button-hover-color: #0000003c;
 
   --shadow-button-hover: 0 0 5px rgb(74, 74, 74);
@@ -157,7 +157,7 @@ font-family: "gilroy timestamp";
 }
 
 /* button bij gekleurde achtergrond */
-.button-basic {
+.button-basic-white {
   border-radius: 30px;
   border: 2px solid var(--button-border-color-1);
   background-color: var(--button-color);
