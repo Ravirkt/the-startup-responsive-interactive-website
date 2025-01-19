@@ -33,45 +33,45 @@ body {
 /* h2 headings fonts */
 @font-face {
   font-family: "gilroy heading";
-  src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
+  src: url(../Assets/fonts/gilroy/gilroy-bold.woff2);
 }
 
 @font-face {
   font-family: "gilroy anchor";
-  src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
+  src: url(../Assets/fonts/gilroy/gilroy-bold.woff2);
 }
 
 @font-face {
   font-family: "gilroy navbar";
-  src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
+  src: url(../Assets/fonts/gilroy/gilroy-bold.woff2);
 }
 
 /* paragraphs */
 @font-face {
   font-family: "gilroy p";
-  src: url(/Assets/fonts/gilroy/gilroy-regular.woff2);
+  src: url(../Assets/fonts/gilroy/gilroy-regular.woff2);
 }
 
 /* figcaptions */
 @font-face {
   font-family: "gilroy figcaption";
-  src: url(/Assets/fonts/gilroy/gilroy-semi-bold.woff2);
+  src: url(../Assets/fonts/gilroy/gilroy-semi-bold.woff2);
 }
 
 /* the round buttons font like the experience button */
 @font-face {
   font-family: "gilroy button";
-  src: url(/Assets/fonts/gilroy/gilroy-semi-bold.woff2)
+  src: url(../Assets/fonts/gilroy/gilroy-semi-bold.woff2)
 }
 
 @font-face {
     font-family: "gilroy timestamp";
-    src: url(/Assets/fonts/gilroy/gilroy-ultra-light.woff2);
+    src: url(../Assets/fonts/gilroy/gilroy-ultra-light.woff2);
   }
 
   @font-face {
     font-family: "gilroy italic-paragraph";
-    src: url(/Assets/fonts/gilroy/gilroy-ultra-light.woff2);
+    src: url(../Assets/fonts/gilroy/gilroy-ultra-light.woff2);
   }
 
 
