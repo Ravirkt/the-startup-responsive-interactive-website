@@ -545,7 +545,9 @@ header {
   white-space: nowrap;
 
   color: var(--font-color-colored-bg);
-}
+
+  }
+
 
 /* voor border alleen op eerste */
 .content-block-5-list .content-block-5-item:first-child {
@@ -631,15 +633,26 @@ header {
 .text::before {
   content: "";
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 0%;
   right: 0%;
-  height: 60%;
+  height: 50%;
   background-color: var(--bg-color-1);
   transform: rotate(-1deg);
   z-index: -1;
-  width: 8em;
+  width: 3.5em;
+
+  @media (min-width: 395px) {
+  top: 40%;
+  height: 60%;
+  width: 9em;
+    }
 }
+
+ 
+
+
+
 
 /*------------------ content block 6 ------------------------ */
 
@@ -838,7 +851,7 @@ header {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  padding-top: 1em;
+  /* padding-top: 1em; */
 
   gap: 1.5em;
 
@@ -1093,6 +1106,11 @@ address {
   display: flex;
   flex-direction: row;
 }
+
+
+
+
+
 
 .privacy-vitas {
   grid-column: 1 / 4;
