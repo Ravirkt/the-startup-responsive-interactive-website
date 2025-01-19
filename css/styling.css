@@ -687,6 +687,7 @@ header {
   }
 }
 
+
 .content-block-6-paragraph {
   grid-column: 1;
   grid-row: 2;
@@ -711,8 +712,8 @@ header {
 
   @media (min-width: 800px) {
     grid-column: 1;
-    grid-row: 2;
-    align-self: last baseline;
+    grid-row: 3;
+    align-self: first baseline;
   }
 }
 
@@ -742,6 +743,7 @@ header {
   object-fit: cover;
   border-radius: 0.5em;
 }
+  
 
 /*------------------ content block 7 ------------------------ */
 
@@ -836,7 +838,8 @@ header {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  /* padding-top: 1.5em; */
+  padding-top: 1em;
+
   gap: 1.5em;
 
   @media (min-width: 700px) {
