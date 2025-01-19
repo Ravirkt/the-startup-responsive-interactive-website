@@ -9,6 +9,7 @@ body {
 
   --logo-header-color: white;
   --logo-footer-color: black;
+  --bg-color-navbar-container: #fff;
 
   --button-color: #ffffff00;
   --button-border-color-1: #ffff;
@@ -25,6 +26,8 @@ body {
   --anchor-hover-effect: 2px solid rgb(0, 0, 0);
 
   --publisher-figure-color: #FF335A;
+
+  --border-bottom-color: #FFCE00;
 }
 
 /* h2 headings fonts */
@@ -35,6 +38,11 @@ body {
 
 @font-face {
   font-family: "gilroy anchor";
+  src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
+}
+
+@font-face {
+  font-family: "gilroy navbar";
   src: url(/Assets/fonts/gilroy/gilroy-bold.woff2);
 }
 
@@ -109,6 +117,12 @@ a {
   text-decoration: none;
   border: none;
   letter-spacing: 2px;
+  color: var(--font-color-white-bg);
+}
+
+.navbar-item {
+  font-family: "gilroy navbar";
+  font-size: x-small;
   color: var(--font-color-white-bg);
 }
 
