@@ -858,19 +858,19 @@ header {
   @media (min-width: 700px) {
     grid-template-columns: repeat(2, 1fr) 3em;
     gap: 1em;
-    height: 70vh;
+    height: 75vh;
   }
 
   @media (min-width: 900px) {
     padding-left: 10vw;
     padding-right: 10vw;
-    height: 60vh;
+    height: 75vh;
   }
 
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     height: 55vh;
     padding-top: 1em;
-  }
+  } */
 }
 
 .content-block-8-title {
