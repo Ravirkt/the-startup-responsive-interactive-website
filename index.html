@@ -14,408 +14,304 @@
 
     <!-- contentblok 1 -->
 
-    <nav class="navbar">
-        <a href="#home" class="navbar-logo logo"><img src="./Assets/icons/Logo-informaat-wit.svg"
-                alt="Logo van Informaat"></a>
+    <nav class="navbar" aria-label="Het navigatie menu" tabindex="-1">
+        <a href="#top-page" class="navbar-logo logo" aria-label="Het logo van Informaat"><img src="./Assets/icons/Logo-informaat-wit.svg" alt="Het logo van Informaat"></a>
 
-        <div class="ham-menu">
-            <span class="bar-1 hover"></span>
-            <span class="bar-2 hover"></span>
-            <span class="bar-3 hover"></span>
+        <div class="ham-menu" aria-label="Open het navigatiemenu" tabindex="0" role="button">
+            <span class="bar-1 hover" aria-hidden="true"></span>
+            <span class="bar-2 hover" aria-hidden="true"></span>
+            <span class="bar-3 hover" aria-hidden="true"></span>
         </div>
 
         <ul class="navbar-container">
-            <li><a class="navbar-item" href="#true-experience">true experience</a></li>
-            <li><a class="navbar-item" href="#expertises">expertises</a></li>
-            <li><a class="navbar-item" href="#inzichten">inzichten</a></li>
-            <li><a class="navbar-item" href="#over-ons">over ons</a></li>
-            <li><a class="navbar-item" href="#vacatures">vacatures</a></li>
-            <li><a class="navbar-item" href="#contact">contact</a></li>
-            <li><a class="navbar-item language" href="#en">EN</a></li>
+            <li><a class="navbar-item" href="#true-experience" aria-current="page">true experience</a></li>
+            <li><a class="navbar-item" href="#expertises" aria-label="Ga naar de Expertises pagina">expertises</a></li>
+            <li><a class="navbar-item" href="#inzichten" aria-label="Ga naar de Inzichten pagina">inzichten</a></li>
+            <li><a class="navbar-item" href="#over-ons" aria-label="Ga naar de Over ons pagina">over ons</a></li>
+            <li><a class="navbar-item" href="#vacatures" aria-label="Ga naar de Vacatures pagina">vacatures</a></li>
+            <li><a class="navbar-item" href="#contact" aria-label="Ga naar de Contact pagina">contact</a></li>
+            <li><a class="navbar-item language" href="#en" aria-label="Vertaal de pagina naar engels">EN</a></li>
         </ul>
     </nav>
 
-
-
     <!-- contentblok 2 -->
 
-    <header>
-        <!-- <img class="informaat-logo" src="./Assets/icons/Logo-informaat-wit.svg" alt="logo"> -->
-
-        <h2 class="header-title">
+    <header id="top-page" aria-label="De hero-sectie">
+        <h1 class="header-title" aria-label="Voor die online dienst waar de wereld wél op zit te wachten">
             <span>Voor die online</span>
             <span>dienst waar</span>
             <span>de wereld wél</span>
             <span>op zit te</span>
             <span>wachten.</span>
-
-        </h2>
+        </h1>
 
         <p class="header-paragraph">
             Samen met UX Academy delen we in een tweedaagse masterclass de fijne
             kneepjes van waardengedreven service design met je.
         </p>
 
-        <button type="button" class="header-button button-basic-white">
-            Schrijf je in <img src="Assets/icons/Arrow-white.svg" alt="Ga naar de inschrijfpagina">
+        <button type="button" class="header-button button-basic-white" 
+            aria-label="Schrijf je in voor de masterclass">Schrijf je in 
+            <img src="Assets/icons/Arrow-white.svg" alt="Ga naar de inschrijfpagina">
         </button>
-        <figure class="header-image-container">
-            <img class="header-image" src="./Assets/images/header-image.png" alt="foto van een persoon op een rolstoel">
 
+        <figure class="header-image-container" aria-label="Afbeelding van een persoon op een rolstoel">
+            <img class="header-image" src="./Assets/images/header-image.png" alt="Afbeelding van een persoon op een rolstoel">
         </figure>
 
-        <button class="media-button">
-            <img class="icon-image" src="Assets/icons/Pause (M).svg" alt="Zet de caroussel op pauze / play">
+        <button class="media-button" aria-label="Zet de caroussel op pauze of speel hem af">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.5 4L8.5 20" stroke="#190B34" stroke-width="3"/>
+                <path d="M15.5 4L15.5 20" stroke="#190B34" stroke-width="3"/>
+                </svg>
         </button>
-
     </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- contentblok 3 -->
-    <main>
 
-        <section class="content-block-3">
-            <h3 class="content-block-3-title">
+    <main>
+        <section class="content-block-3" aria-labelledby="Waardevol-authentiek-en-geloofwaardig-titel" aria-describedby="Waardevol-authentiek-en-geloofwaardig-paragraaf">
+            <h3 class="content-block-3-title title-block-3" id="Waardevol-authentiek-en-geloofwaardig-titel">
                 <span>Waardevol,</span>
                 <span>authentiek en geloofwaardig.</span>
-                <span>Waardevol,</span>
-
             </h3>
-            <p class="content-block-3-paragraph">
+
+            <p class="content-block-3-paragraph" id="Waardevol-authentiek-en-geloofwaardig-paragraaf">
                 Innoveer, onderneem en verbind. Ontluik het potentieel van jouw online toepassingen en maak deze
-                tastbaar
-                voor mensen van vlees en bloed.
-                Als ontwerpers voor het leven bouwen wij aan
+                tastbaar voor mensen van vlees en bloed. Als ontwerpers voor het leven bouwen wij aan
                 duurzame relaties met waardevolle, authentieke en geloofwaardige digitale oplossingen.
             </p>
-            <a class="content-block-3-anchor" href="#">Gun je digitale beleving een hart <img
-                    src="Assets/icons/Arrow-black.svg">
-            </a>
+
+            <a class="content-block-3-anchor" aria-label="Lees meer over digitale beleving" href="#">Gun je digitale beleving een hart<img src="Assets/icons/Arrow-black.svg" alt=""></a>
         </section>
 
         <!-- contentblok 4 -->
 
-        <div class="content-block-4">
-            <section class="experience-container">
-                <a href="#" class="experience-anchor"><img class="experience-image" src="./Assets/images/boon.png"
-                        alt="True experience van Boon Edam"></a>
-                <h4 class="experience-title">De True experience van Boon Edam</h4>
-                <p class="experience-paragraph">De entree van de toekomst is online.</p>
+        <div class="content-block-4" role="region">
+            <section class="experience-container" aria-labelledby="boon-edam-titel" aria-describedby="boon-edam-paragraaf">
+                <a href="#" class="experience-anchor" aria-label="Lees meer over de True experience van Boon Edam">
+                    <img class="experience-image" src="./Assets/images/boon.png" alt="True experience van Boon Edam">
+                </a>
+                <h4 id="boon-edam-titel" class="experience-title">De True experience van Boon Edam</h4>
+                <p id="boon-edam-paragraaf" class="experience-paragraph image-sub-text">De entree van de toekomst is online.</p>
             </section>
-
-            <section class="experience-container">
-                <a href="#" class="experience-anchor"><img class="experience-image" src="./Assets/images/mediq.png"
-                        alt="True experience van Mediq"></a>
-                <h4 class="experience-title">De True experience van Mediq</h4>
-                <p class="experience-paragraph">End-to-end -multiplatform -design systeem.</p>
+        
+            <section class="experience-container" aria-labelledby="mediq-titel" aria-describedby="mediq-paragraaf">
+                <a href="#" class="experience-anchor" aria-label="Lees meer over de True experience van Mediq">
+                    <img class="experience-image" src="./Assets/images/mediq.png" alt="True experience van Mediq">
+                </a>
+                <h4 id="mediq-titel" class="experience-title">De True experience van Mediq</h4>
+                <p id="mediq-paragraaf" class="experience-paragraph image-sub-text">End-to-end multiplatform design systeem.</p>
             </section>
-
-            <section class="experience-container">
-                <a href="#" class="experience-anchor"><img class="experience-image" src="./Assets/images/abnamro.png"
-                        alt="True experience van ABN AMRO"></a>
-                <h4 class="experience-title">De True experience van ABN AMRO</h4>
-                <p class="experience-paragraph">Grip op alle content.</p>
+        
+            <section class="experience-container" aria-labelledby="abnamro-titel" aria-describedby="abnamro-paragraaf">
+                <a href="#" class="experience-anchor" aria-label="Lees meer over de True experience van ABN AMRO">
+                    <img class="experience-image" src="./Assets/images/abnamro.png" alt="True experience van ABN AMRO">
+                </a>
+                <h4 id="abnamro-titel" class="experience-title">De True experience van ABN AMRO</h4>
+                <p id="abnamro-paragraaf" class="experience-paragraph image-sub-text">Grip op alle content.</p>
             </section>
-
+        
             <div class="all-experiences-button-container">
-                <button class="all-experiences-button">Check onze True experiences <img
-                        src="Assets/icons/Arrow-black.svg"></button>
+                <button class="all-experiences-button" aria-label="Bekijk alle True experiences">
+                    Check onze True experiences <img src="Assets/icons/Arrow-black.svg" alt="">
+                </button>
             </div>
         </div>
+        
 
         <!-- contentblok 5 -->
 
-        <section class="content-block-5">
-
-            <ul class="content-block-5-list">
-                <li class="content-block-5-item">
-                    <h4 class="content-block-5-subtitle">Waardenpropositie</h4>
-                </li>
-                <li class="content-block-5-item">
-                    <h4 class="content-block-5-subtitle">UX Concepten</h4>
-                </li>
-                <li class="content-block-5-item">
-                    <h4 class="content-block-5-subtitle">Design Systems</h4>
-                </li>
-                <li class="content-block-5-item">
-                    <h4 class="content-block-5-subtitle">Content-architectuur</h4>
-                </li>
+        <section class="content-block-5" aria-labelledby="waardenpropositie-titel">
+            <ul class="content-block-5-list" aria-label="Lijst met kernpunten">
+                <li class="content-block-5-item" aria-label="Waardenpropositie"><h4 class="content-block-5-subtitle">Waardenpropositie</h4></li>
+                <li class="content-block-5-item" aria-label="UX Concepten"><h4 class="content-block-5-subtitle">UX Concepten</h4></li>
+                <li class="content-block-5-item" aria-label="Design Systems"><h4 class="content-block-5-subtitle">Design Systems</h4></li>
+                <li class="content-block-5-item" aria-label="Content-architectuur"><h4 class="content-block-5-subtitle">Content-architectuur</h4></li>
             </ul>
-            <figure class="content-block-5-image-container">
-                <img class="content-block-5-image" src="./Assets/images/content-block-5.png" alt="Man met een beker op zijn oor">
+
+            <figure class="content-block-5-image-container" aria-label="Man met een beker over zijn oor">
+                <img class="content-block-5-image" src="./Assets/images/content-block-5.png" alt="Man met een beker over zijn oor">
             </figure>
 
-            <h2 class="content-block-5-title">
+            <h2 class="content-block-5-title" id="waardenpropositie-titel">
                 <span>Digitale innovatie die</span>
                 <span class="text">je voelt en beleeft.</span>
             </h2>
 
-            <!-- <span>Digitale</span>
-            <span>innovatie die je</span>
-            <span>voelt en</span>
-            <span>beleeft.</span> -->
-
-
-            <button type="button" class="content-block-5-button button-basic-white">Klik voor de toekomst <img
-                    src="Assets/icons/Arrow-white.svg" alt="Klik voor de toekomst button">
+            <button type="button" class="content-block-5-button button-basic-white">Klik voor de toekomst<img
+                src="Assets/icons/Arrow-white.svg" alt="Klik voor de toekomst button">
             </button>
         </section>
 
-        <!-- <section class="content-block-5">
-    <figure class="content-block-5-image">
-        <img src="https://picsum.photos/200">
-    </figure>
-
-        <ul class="list-items">
-            <li>Waardepropositie</li>
-            <li>UX concepten</li>
-            <li>Design systems</li>
-            <li>Contentarchitectuur</li>
-        </ul>
-
-    </figure>
-
-</section> -->
-
-
         <!-- contentblok 6 -->
 
-        <section class="content-block-6">
-            <h3 class="content-block-6-title">
+        <section class="content-block-6" aria-labelledby="onze-experts-jouw-team-titel" aria-describedby="onze-experts-jouw-team-paragraaf">
+            <h3 id="onze-experts-jouw-team-titel" class="content-block-6-title title-block-6">
                 <span>Onze experts, jouw</span>
                 <span>team.</span>
             </h3>
 
-                <p class="content-block-6-paragraph">
-                    Tijdelijk behoefte aan een extra design expert? Onze ervaren profesionele UX-, visual-, content-, en
-                    service ontwerpers voelen zich snel thuis in elke digitale uitdaging.
-                    Van het grootste vergezicht, tot de kleinste bulletpoint.
-                </p>
+            <p class="content-block-6-paragraph" id="onze-experts-jouw-team-paragraaf">
+                Tijdelijk behoefte aan een extra design expert? Onze ervaren profesionele UX-, visual-, content-, en
+                service ontwerpers voelen zich snel thuis in elke digitale uitdaging.
+                Van het grootste vergezicht, tot de kleinste bulletpoint.
+            </p>
 
-                <a class="content-block-6-anchor" href="#">Versterk je team<img src="Assets/icons/Arrow-black.svg">
-                </a>
+            <a class="content-block-6-anchor" href="#">Versterk je team<img src="Assets/icons/Arrow-black.svg" alt=""></a>
             
-            <figure class="image-container-block-6">
-                <img class="experts-image-block-6" src="./Assets/images/Experts0block-6.png">
+            <figure class="image-container-block-6" aria-label="grafische afbeelding van een tablet">
+                <img class="experts-image-block-6" src="./Assets/images/Experts0block-6.png" alt="grafische afbeelding van een tablet">
             </figure>
-
         </section>
 
         <!-- contentblok 7 -->
 
-
-        <article class="content-block-7">
-
-            <h2 class="content-block-7-title">Inzichten</h2>
-
-            <section class="content-container">
-                <a href="#" class="content-anchor"><img class="content-image" src="./Assets/images/waardengedreven.png"
-                        alt="afbeelding met kunstachtige vormgeving"></a>
-                <figcaption class="content-paragraph">Event</figcaption>
-                <h4 class="content-title">Waardengedreven ontwerp #2</h4>
+        <article class="content-block-7" aria-labelledby="inzicht-titel">
+            <h3 id="inzicht-titel" class="content-block-7-title title-block-3-6">Inzichten</h3>
+        
+            <section class="content-container" aria-labelledby="waardegedreven-ontwerp-titel" aria-describedby="waardegedreven-ontwerp-caption">
+                <a href="#" class="content-anchor" aria-label="Lees meer over Waardengedreven ontwerp #2">
+                    <img class="content-image" src="./Assets/images/waardengedreven.png" alt="Afbeelding met kunstachtige vormgeving">
+                </a>
+                <div id="waardegedreven-ontwerp-caption" class="figcaption content-paragraph">Event</div>
+                <h4 id="waardegedreven-ontwerp-titel" class="content-title">Waardengedreven ontwerp #2</h4>
             </section>
-
-            <section class="content-container">
-                <a href="#" class="content-anchor"><img class="content-image" src="./Assets/images/liefdevoorhetvak.png"
-                        alt="Groep mensen in een vergadering"></a>
-                <figcaption class="content-paragraph">Webinars</figcaption>
-                <h4 class="content-title">Vergroot je kennis en liefde voor het vak</h4>
+        
+            <section class="content-container" aria-labelledby="vergroot-je-kennis-titel" aria-describedby="vergroot-je-kennis-caption">
+                <a href="#" class="content-anchor" aria-label="Lees meer over Vergroot je kennis en liefde voor het vak">
+                    <img class="content-image" src="./Assets/images/liefdevoorhetvak.png" alt="Groep mensen in een vergadering">
+                </a>
+                <div id="vergroot-je-kennis-caption" class="figcaption content-paragraph">Webinars</div>
+                <h4 id="vergroot-je-kennis-titel" class="content-title">Vergroot je kennis en liefde voor het vak</h4>
             </section>
+        
+            <section class="content-container" aria-labelledby="b-corp-familie-titel" aria-describedby="b-corp-familie-caption">
+                <a href="#" class="content-anchor" aria-label="Lees meer over Informaat deel van de B Corp familie">
+                    <img class="content-image" src="./Assets/images/bcorp.png" alt="Het logo van B Corporation">
+                </a>
+                <div id="b-corp-familie-caption" class="figcaption content-paragraph">Artikel</div>
+                <h4 id="b-corp-familie-titel" class="content-title">Informaat deel van de B Corp familie</h4>
 
-            <section class="content-container">
-                <a href="#" class="content-anchor"><img class="content-image" src="./Assets/images/bcorp.png"
-                        alt="Het logo van B Corporation"></a>
-                <figcaption class="content-paragraph">Artikel</figcaption>
-                <h4 class="content-title">Informaat deel van de B Corp familie</h4>
-
-                <div class="author-container">
+                <div class="author-container" aria-label="Artikel geschreven door Susanne van Mulken op 10 januari 2024">
                     <span class="author-figure"></span>
                     <div class="author-text">
                         <h5 class="author-name">Susanne van Mulken</h5>
-                        <time class="published-date">10 januari 2024</time>
+                        <span class="time">10 januari 2024</span>
                     </div>
                 </div>
             </section>
-
-            <section class="content-container">
-                <a href="#" class="content-anchor"><img class="content-image"
-                        src="./Assets/images/digitale-burgerrechten.png" alt="Het logo van B Corporation">
+        
+            <section class="content-container" aria-labelledby="digitale-burgerrechten-titel" aria-describedby="digitale-burgerrechten-caption">
+                <a href="#" class="content-anchor" aria-label="Lees meer over Informaat deel van de B Corp familie">
+                    <img class="content-image" src="./Assets/images/digitale-burgerrechten.png" alt="Afbeelding met een logo">
                 </a>
-                <figcaption class="content-paragraph">Artikel</figcaption>
-                <h4 class="content-title">Informaat deel van de B Corp familie</h4>
+                <div id="digitale-burgerrechten-caption" class="figcaption content-paragraph">Artikel</div>
+                <h4 id="digitale-burgerrechten-titel" class="content-title">Hoeders van digitale digitale-burgerrechten</h4>
 
-                <div class="author-container">
+                <div class="author-container" aria-label="Artikel geschreven door Barbara Werdmuller op 30 oktober 2023">
                     <span class="author-figure"></span>
                     <div class="author-text">
                         <h5 class="author-name">Barbara Werdmuller</h5>
-                        <time class="published-date">30 oktober 2023</time>
+                        <span class="time">30 oktober 2023</span>
                     </div>
                 </div>
             </section>
         </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
         <!-- contentblok 8 -->
 
-        <section class="content-block-8">
-            <h3 class="content-block-8-title">
+        <section class="content-block-8" aria-labelledby="goed-werk-doet-goed-titel">
+            <h3 id="goed-werk-doet-goed-titel" class="content-block-8-title">
                 <span>Goed werk doet</span>
                 <span>goed.</span>
             </h3>
-
-            <div class="text-content-container">
-
-                <p class="content-block-8-paragraph italic-paragraph">
+        
+            <div class="text-content-container" role="region">
+                <p class="content-block-8-paragraph italic-paragraph" aria-label="Missieverklaring 1">
                     Wij willen met ons werk, ons bureau en samen met onze klanten graag bijdragen aan een mooiere
                     wereld voor iedereen. Eerlijker, inclusiever en duurzamer.
                 </p>
-
-
-
-                <p class="content-block-8-paragraph-2 italic-paragraph">
+        
+                <p class="content-block-8-paragraph-2 italic-paragraph" aria-label="Missieverklaring 2">
                     B Corp zijn we onderdeel van een beweging van circa 7350 bedrijven wereldwijd die zich
                     inzetten voor een nieuwe economie waarin bedrijven hun resultaten niet alleen ten goede laten komen
                     aan de aandeelhouders,
                     maar ook een positieve impact hebben op mens, maatschappij en milieu.
                 </p>
             </div>
-
+        
             <div class="image-container">
-                <img class="content-image" src="./Assets/images/b-corp-block-8.png" alt="Het logo van B Corporation">
+                <img class="content-image" src="./Assets/images/b-corp-block-8.png" 
+                alt="Logo van B Corporation" aria-label="B Corporation logo">
             </div>
-
-            <button type="button" class="content-block-8-button button-basic-white">Volg de beweging
-                <img src="Assets/icons/Arrow-white.svg">
+        
+            <button type="button" class="content-block-8-button button-basic-white" aria-label="Lees meer over de beweging van B Corporation">
+                Volg de beweging
+                <img src="Assets/icons/Arrow-white.svg" alt="">
             </button>
-
+        
             <div class="button-container scroll-button">
-                <button type="button" class="scroll-up-button scroll-button">Naar boven</button>
-
-                <img src="Assets/icons/Up (S).svg">
+                <button type="button" class="scroll-up-button scroll-button" aria-label="Scroll terug naar boven">
+                    Naar boven
+                </button>
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 8.00098L7.99999 3.00098L13.5 8.00098" stroke="white" stroke-width="2"/>
+                    <path d="M2.5 14.001L7.99999 9.00098L13.5 14.001" stroke="white" stroke-width="2"/>
+                </svg>
             </div>
         </section>
-
     </main>
 
+        <!-- contentblok 9 footer -->
 
-
-
-
-
-
-
-
-    <footer>
-
-        <ul class="nav-items footer-nav-items">
-            <li><a href="true-experiences.html">true experiences</a></li>
-            <li><a href="diensten.html">diensten</a></li>
-            <li><a href="updates.html">updates</a></li>
-            <li><a href="over-ons.html">over ons</a></li>
-            <li><a href="vacatures.html">vacatures</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-
-        <address>
-            <p>Seinstraat 32</p>
-            <p>1223 DA Hilversum</p>
-            <a href="tel:0355431222">035 543 1222</a>
-            <a href="mailto:info@informaat.nl">info@informaat.nl</a>
-        </address>
-
-        <ul class="social-media">
-            <li><img src="./Assets/icons/Instagram.svg" alt="Het Instagram logo"></li>
-            <li><img src="./Assets/icons/linkedin.svg" alt="De Linkedin logo"></li>
-            <li><img src="./Assets/icons/X.svg" alt="Het X logo"></li>
-        </ul>
-
-        <ul class="licence-images-footer">
-            <li class="footer-image"><img src="./Assets/images/emerce100.png" alt="Het logo van Emerce100"></li>
-            <li class="footer-image"><img src="./Assets/images/dda.png" alt="Het logo van dda"></li>
-            <li class="footer-image"><img src="./Assets/images/UX Academy.png" alt="Het logo van UX Academy"></li>
-            <li class="footer-image"><img src="./Assets/images/SDN.png" alt="Het logo van SDN"></li>
-
-        </ul>
-
-        <hr class="line">
-        <div class="footer-end">
-            <img class="footer-informaat-logo" src="./Assets/icons/logo.svg">
-            <p class="designers-for-life-text">Ontwerpers voor het leven.</p>
-            
-        </div>
-
-
-        <p class="privacy-vitas"> Informaat is onderdeel van Vitas privacy statement</p>
-
-
-
-
-    </footer>
-
-
-
-
-
-
-
-
-
+        <footer>
+            <ul class="nav-items footer-nav-items" aria-label="Footer navigatie">
+                <li><a href="true-experiences.html">true experiences</a></li>
+                <li><a href="diensten.html">diensten</a></li>
+                <li><a href="updates.html">updates</a></li>
+                <li><a href="over-ons.html">over ons</a></li>
+                <li><a href="vacatures.html">vacatures</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        
+            <address aria-label="Contactinformatie">
+                <p>Seinstraat 32</p>
+                <p>1223 DA Hilversum</p>
+                <a href="tel:0355431222">035 543 1222</a>
+                <a href="mailto:info@informaat.nl">info@informaat.nl</a>
+            </address>
+        
+            <ul class="social-media" aria-label="Social media">
+                <li><img src="./Assets/icons/Instagram.svg" alt="Instagram"></li>
+                <li><img src="./Assets/icons/linkedin.svg" alt="LinkedIn"></li>
+                <li><img src="./Assets/icons/X.svg" alt="X (voorheen Twitter)"></li>
+            </ul>
+        
+            <ul class="licence-images-footer" aria-label="Certificeringslogo's">
+                <li class="footer-image"><img src="./Assets/images/emerce100.png" alt="Emerce100 logo"></li>
+                <li class="footer-image"><img src="./Assets/images/dda.png" alt="Dutch Digital Agencies logo"></li>
+                <li class="footer-image"><img src="./Assets/images/UXAcademy.png" alt="UX Academy logo"></li>
+                <li class="footer-image"><img src="./Assets/images/SDN.png" alt="Service Design Network logo"></li>
+            </ul>
+        
+            <hr class="line" aria-hidden="true">
+        
+            <div class="footer-end">
+                <img class="footer-informaat-logo" src="./Assets/icons/logo.svg" alt="Informaat logo">
+                <p class="designers-for-life-text">Ontwerpers voor het leven.</p>
+            </div>
+        
+            <p class="privacy-vitas">Informaat is onderdeel van Vitas privacy statement</p>
+        </footer>
+        
 
 
     <script src="./javascript/javascript.js" defer></script>
 
 
-
 </body>
-
 </html>
 
 

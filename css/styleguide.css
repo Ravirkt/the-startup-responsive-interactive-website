@@ -6,7 +6,6 @@ body {
   --bg-color-4: #416ad9;
   --bg-color-5: #008273;
 
-
   --logo-header-color: white;
   --logo-footer-color: black;
   --bg-color-navbar-container: #fff;
@@ -25,9 +24,9 @@ body {
 
   --anchor-hover-effect: 2px solid rgb(0, 0, 0);
 
-  --publisher-figure-color: #FF335A;
+  --publisher-figure-color: #ff335a;
 
-  --border-bottom-color: #FFCE00;
+  --border-bottom-color: #ffce00;
 }
 
 /* h2 headings fonts */
@@ -61,55 +60,62 @@ body {
 /* the round buttons font like the experience button */
 @font-face {
   font-family: "gilroy button";
-  src: url(../Assets/fonts/gilroy/gilroy-semi-bold.woff2)
+  src: url(../Assets/fonts/gilroy/gilroy-semi-bold.woff2);
 }
 
 @font-face {
-    font-family: "gilroy timestamp";
-    src: url(../Assets/fonts/gilroy/gilroy-ultra-light.woff2);
-  }
+  font-family: "gilroy timestamp";
+  src: url(../Assets/fonts/gilroy/gilroy-ultra-light.woff2);
+}
 
-  @font-face {
-    font-family: "gilroy italic-paragraph";
-    src: url(../Assets/fonts/gilroy/gilroy-ultra-light.woff2);
-  }
-
-
-
-
+@font-face {
+  font-family: "gilroy italic-paragraph";
+  src: url(../Assets/fonts/gilroy/gilroy-ultra-light.woff2);
+}
 
 /* headings */
+
+h1 {
+  font-family: "gilroy heading";
+  font-size: clamp(40px, 5vw, 9vw);
+  /* font-size: 40px; */
+}
+
 h2 {
   font-family: "gilroy heading";
-  font-size: 40px;
+  font-size: clamp(30px, 40px, 60px);
+  /* font-size: 40px; */
 }
 
 h3 {
   font-family: "gilroy heading";
-  font-size: 35px;
+  /* font-size: 35px; */
+  font-size: clamp(35px, 5vw, 3rem);
+
 }
 
 h4 {
   font-family: "gilroy heading";
-  font-size: 22px;
+  font-size: clamp(0.5em, 22px, 1rem);
+
+  /* font-size: 22px; */
 }
 
 h5 {
-    font-family: "gilroy heading";
-    font-size: 12px;
+  font-family: "gilroy heading";
+  font-size: 12px;
 }
 
-time {
-    font-family: "gilroy timestamp";
-    font-size: 10px;
+.time {
+  font-family: "gilroy timestamp";
+  font-size: 10px;
 }
 
 p {
   font-family: "gilroy p";
   font-size: larger;
   letter-spacing: 1px;
-  line-height: 1.3;
-
+  line-height: 1.5;
 }
 
 a {
@@ -126,23 +132,39 @@ a {
   color: var(--font-color-white-bg);
 }
 
+.title-block-3 {
+  font-family: "gilroy heading";
+  /* font-size: 35px; */
+  font-size: clamp(35px, 3.7vw, 4rem);
+}
+
+.title-block-6 {
+  font-family: "gilroy heading";
+  /* font-size: 35px; */
+  font-size: clamp(35px, 3vw, 3rem);
+}
+
+.image-sub-text {
+  font-family: "gilroy p";
+  font-size: small;
+}
+
 li {
   list-style-type: none;
 }
 
-figcaption {
+.figcaption {
   font-family: "gilroy figcaption";
   font-size: 14px;
   letter-spacing: 2px;
   color: var(--font-color-subtext);
 }
 
- .italic-paragraph {
+.italic-paragraph {
   font-family: "gilroy italic-paragraph";
   font-size: 15px;
   line-height: 1.6;
 }
-
 
 /* button bij witte achtergrond */
 .all-experiences-button {
@@ -162,12 +184,9 @@ button {
   cursor: pointer;
 }
 
-
 address {
-font-size: 12px;
-font-family: "gilroy timestamp";
-
-
+  font-size: 12px;
+  font-family: "gilroy timestamp";
 }
 
 /* button bij gekleurde achtergrond */
@@ -207,8 +226,6 @@ font-family: "gilroy timestamp";
   font-weight: 500;
   color: var(--font-color-colored-bg);
 }
-
-
 
 header {
   background-color: var(--bg-color-1);

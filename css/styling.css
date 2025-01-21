@@ -3,12 +3,10 @@
   padding: 0;
   /* overflow-x: hidden; */
 
-  body::-webkit-scrollbar { 
+  body::-webkit-scrollbar {
     display: none;
   }
 }
-
-
 
 /*------------------ content block 1 navigationbar ------------------------ */
 
@@ -18,27 +16,23 @@ nav {
   padding: 1em;
   padding-top: 2em;
   z-index: 1000;
-}
 
-.navbar {
   display: flex;
-  justify-content: space-between; 
-  align-items: center;   
-  width: 100%;   
-
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-
 
 /* hamburger menu */
 .ham-menu {
-  display: flex;                 
+  display: flex;
   flex-direction: column;
-  align-items: flex-end;  
+  align-items: flex-end;
   gap: 0.3em;
   cursor: pointer;
 
-/* position ham menu */
-  background-color: var( --bg-color-navbar-container);
+  /* position ham menu */
+  background-color: var(--bg-color-navbar-container);
   padding: 0.6em;
   padding-right: 2.5em;
   padding-left: 1.5em;
@@ -49,11 +43,10 @@ nav {
   @media (min-width: 1200px) {
     display: none;
   }
-
 }
 
 /* the differend sizes for the bars hamburger menu */
-.bar-1 {
+.ham-menu .bar-1 {
   width: 25px;
   height: 4px;
   background-color: rgb(0, 0, 0);
@@ -71,31 +64,24 @@ nav {
   background-color: rgb(0, 0, 0);
 }
 
-
 /* hover effect for hamburger bar menu */
 .ham-menu span {
-  transition: all 0.4s ease; 
+  transition: all 0.4s ease;
 }
 
 .ham-menu:hover .bar-1 {
-  transform: translateY(5px); 
+  transform: translateY(5px);
 }
 
 .ham-menu:hover .bar-2 {
-  opacity: 0; 
+  opacity: 0;
 }
 
 .ham-menu:hover .bar-3 {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 
-
-
-
-
-
 /* longer navbar for bigger screens */
-
 .navbar-container {
   display: none;
   flex-direction: row;
@@ -107,18 +93,15 @@ nav {
   position: relative;
   right: 3em;
 
-  background-color: var( --bg-color-navbar-container);
+  background-color: var(--bg-color-navbar-container);
   padding: 1em;
   border-radius: 100px 0 0 100px;
-
   display: none;
-
 
   /* longer navbar is visible on 1300px */
   @media (min-width: 1200px) {
-  display: flex;  
-}
-
+    display: flex;
+  }
 }
 
 .navbar-item {
@@ -137,14 +120,11 @@ nav {
   border: 1px solid rgb(168, 168, 168);
   border-radius: 50%;
   text-align: center;
-  
 }
-
-
 
 /* toggle for navbar visible on scroll and bg color */
 .navbar.nav--scrolled {
-  background-color: rgba(0, 0, 0, 0.583); 
+  background-color: rgba(0, 0, 0, 0.583);
 }
 
 .navbar.nav--hidden {
@@ -152,35 +132,8 @@ nav {
   transition: transform 0.5s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------ content block 2 ------------------------ */
+
 header {
   height: 90vh;
   padding-left: 1.5em;
@@ -191,29 +144,16 @@ header {
   gap: 0.5em;
 
   @media (min-width: 700px) {
-    height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1.5em;
     height: 70vh;
-
   }
 
   @media (min-width: 1024px) {
-    height: 90vh;
-
+    height: 100vh;
   }
-
-  
-
-  
 }
-
-/* .informaat-logo {
-  grid-column: 1 / 2;
-  grid-row: 1;
-  padding-top: 1.5em;
-} */
 
 .header-title {
   grid-column: 1 / 3;
@@ -238,6 +178,13 @@ header {
     grid-row: 1;
     padding-top: 3em;
   }
+
+  @media (min-width: 1300px) {
+    position: relative;
+    z-index: 2;
+    top: -1.5em;
+    right: -3em;
+  }
 }
 
 .header-paragraph {
@@ -254,7 +201,13 @@ header {
   @media (min-width: 1200px) {
     grid-column: 1 / 2;
     grid-row: 2;
-    padding-top: 3em;
+  }
+
+  @media (min-width: 1300px) {
+    position: relative;
+    z-index: 2;
+    top: -6em;
+    right: -12em;
   }
 }
 
@@ -271,52 +224,43 @@ header {
     grid-row: 3;
     align-self: first baseline;
   }
+
+  @media (min-width: 1300px) {
+    position: relative;
+    z-index: 2;
+    top: -6em;
+    right: -15em;
+  }
 }
 
+.header-image-container {
+  position: relative;
+}
 
-
-
-/* nu hidden komt pas op grotere schermen tevorschijn */
 .header-image {
-    display: none;
-  
-    @media (min-width: 1024px) {
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      /* width: 100%; */
-      max-width: 430px;
-      justify-self: flex-end;
-  
-      /* voor image posititoe */
-      position: relative;
-      left: 1.5em;
+  display: none;
+  /* z-index: 1;  */
 
-    }
+  @media (min-width: 1024px) {
+    display: inline-block;
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+    max-width: 100%;
+    justify-self: flex-end;
 
-    @media (min-width: 1200px) {
-      position: absolute;
-      z-index: -0;
-      right: -0% ; 
-      top: -4%;
-      height: 30em;
-      max-width: 700px;
-
-    }
+    /* voor image posititie */
+    position: absolute;
+    left: 1.5em;
+    bottom: -10em;
   }
-  
-  
 
-
-
-
-
-
-
-
-
-
-
+  @media (min-width: 1300px) {
+    bottom: 7em;
+    right: -1.5em;
+    padding: 0;
+    margin: 0;
+  }
+}
 
 .media-button {
   grid-column: 2;
@@ -330,15 +274,20 @@ header {
 
   @media (min-width: 1024px) {
     grid-column: 1;
-    grid-row: 3;
-    align-self: center;
+    grid-row: 4;
+    align-self: first baseline;
     justify-self: left;
     margin-left: 1em;
   }
 
   @media (min-width: 1200px) {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
+    justify-self: center;
+  }
+
+  @media (min-width: 1300px) {
+    display: none;
   }
 }
 
@@ -380,7 +329,6 @@ header {
   background-color: var(--bg-color-2);
   padding-bottom: 4em;
 
-
   @media (min-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
@@ -404,14 +352,14 @@ header {
   @media (min-width: 700px) {
     grid-column: 1;
     grid-row: 1;
-    align-self: last baseline;
+    align-self: center;
   }
 
   & span {
     display: block;
 
     @media (min-width: 700px) {
-      /* display: inline; */
+      display: inline;
     }
   }
 }
@@ -423,7 +371,7 @@ header {
   @media (min-width: 700px) {
     grid-column: 2;
     grid-row: 1;
-    align-self: last baseline;
+    align-self: center;
   }
 }
 
@@ -442,9 +390,16 @@ header {
     grid-row: 2;
     align-self: start;
   }
+
+  @media (min-width: 1400px) {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+  }
 }
 
 /*------------------ content block 4 ------------------------ */
+
 .content-block-4 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -466,6 +421,14 @@ header {
     padding-left: 10vw;
     padding-right: 10vw;
   }
+}
+
+.experience-title {
+  padding-top: 0.5em;
+}
+
+.experience-paragraph {
+  padding-top: 0.2em;
 }
 
 .experience-container:nth-child(1) {
@@ -497,7 +460,7 @@ header {
 .experience-image {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   align-self: center;
   justify-self: center;
 
@@ -517,9 +480,6 @@ header {
 
 /*------------------ content block 5 ------------------------ */
 
-/* .content-block-5-button {
-  width: 10em;
-} */
 .content-block-5 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -574,9 +534,7 @@ header {
   white-space: nowrap;
 
   color: var(--font-color-colored-bg);
-
-  }
-
+}
 
 /* voor border alleen op eerste */
 .content-block-5-list .content-block-5-item:first-child {
@@ -598,20 +556,6 @@ header {
     position: relative;
     left: 1.5em;
   }
-
-  /* voor nog grotere scherm */
-  /* @media (min-width: 1100px) {
-    grid-column: 1 / 1;
-    grid-row: 1;
-    width: 100%;
-    max-width: 400px;
-    justify-self: flex-start; */
-
-    /* voor image posititoe */
-    /* position: relative;
-    right: 1.5em;
-  } */
-  
 }
 
 .content-block-5-image {
@@ -629,10 +573,6 @@ header {
 
   & span {
     display: block;
-
-    /* @media (min-width: 800px) {
-      display: inline; 
-    } */
   }
 }
 
@@ -672,16 +612,11 @@ header {
   width: 3.5em;
 
   @media (min-width: 395px) {
-  top: 40%;
-  height: 60%;
-  width: 9em;
-    }
+    top: 40%;
+    height: 60%;
+    width: 9em;
+  }
 }
-
- 
-
-
-
 
 /*------------------ content block 6 ------------------------ */
 
@@ -729,7 +664,6 @@ header {
   }
 }
 
-
 .content-block-6-paragraph {
   grid-column: 1;
   grid-row: 2;
@@ -752,10 +686,19 @@ header {
     border-bottom: var(--anchor-hover-effect);
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     grid-column: 1;
-    grid-row: 3;
-    align-self: first baseline;
+    grid-row: 2;
+    align-self: center;
+    margin-top: 10em;
+  }
+
+  @media (min-width: 1100px) {
+    margin-top: 12em;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 8em;
   }
 }
 
@@ -765,7 +708,7 @@ header {
   @media (min-width: 800px) {
     display: block;
     grid-column: 2;
-    grid-row: 1 / 4;
+    grid-row: 1 / 3;
     justify-self: center;
     align-self: center;
     width: 80%;
@@ -785,7 +728,6 @@ header {
   object-fit: cover;
   border-radius: 0.5em;
 }
-  
 
 /*------------------ content block 7 ------------------------ */
 
@@ -880,8 +822,6 @@ header {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  /* padding-top: 1em; */
-
   gap: 1.5em;
 
   @media (min-width: 700px) {
@@ -895,11 +835,6 @@ header {
     padding-right: 10vw;
     height: 75vh;
   }
-
-  /* @media (min-width: 1024px) {
-    height: 55vh;
-    padding-top: 1em;
-  } */
 }
 
 .content-block-8-title {
@@ -1078,21 +1013,17 @@ address {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  
 
   @media (min-width: 700px) {
     grid-column: 4;
     grid-row: 1;
     gap: 1em;
-    
-  
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1200px) {
     flex-direction: row-reverse;
     align-self: flex-start;
-    
-}
+  }
 }
 
 .footer-end {
@@ -1134,12 +1065,12 @@ address {
   grid-row: 4;
   display: flex;
   flex-direction: row;
+
+  /* test voor markeer bg achter titels */
+  z-index: 2;
+  position: relative;
+  display: inline-block;
 }
-
-
-
-
-
 
 .privacy-vitas {
   grid-column: 1 / 4;
@@ -1155,4 +1086,18 @@ address {
     align-self: last baseline;
     justify-self: right;
   }
+}
+
+/* test voor markeer bg achter titels */
+.designers-for-life-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  right: 0%;
+  height: 50%;
+  background-color: var(--border-bottom-color);
+  transform: rotate(-2deg);
+  z-index: -1;
+  width: 8em;
 }
