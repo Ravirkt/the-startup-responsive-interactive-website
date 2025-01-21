@@ -91,7 +91,6 @@ h3 {
   font-family: "gilroy heading";
   /* font-size: 35px; */
   font-size: clamp(35px, 5vw, 3rem);
-
 }
 
 h4 {
@@ -185,8 +184,9 @@ button {
 }
 
 address {
-  font-size: 12px;
+  /* font-size: 12px; */
   font-family: "gilroy timestamp";
+  font-size: clamp(0.875rem, 1.5vw, 0.875rem);
 }
 
 /* button bij gekleurde achtergrond */
