@@ -4,7 +4,6 @@ body {
   --bg-color-2: #f3f1e9;
   --bg-color-3: #008273;
   --bg-color-4: #416ad9;
-  --bg-color-5: #008273;
 
   --logo-header-color: white;
   --logo-footer-color: black;
@@ -34,12 +33,12 @@ body {
   font-family: "gilroy heading";
   src: url(../Assets/fonts/gilroy/gilroy-bold.woff2);
 }
-
+/* anchor */
 @font-face {
   font-family: "gilroy anchor";
   src: url(../Assets/fonts/gilroy/gilroy-bold.woff2);
 }
-
+/* navbar items */
 @font-face {
   font-family: "gilroy navbar";
   src: url(../Assets/fonts/gilroy/gilroy-bold.woff2);
@@ -63,6 +62,7 @@ body {
   src: url(../Assets/fonts/gilroy/gilroy-semi-bold.woff2);
 }
 
+/* timestamp */
 @font-face {
   font-family: "gilroy timestamp";
   src: url(../Assets/fonts/gilroy/gilroy-ultra-light.woff2);
@@ -96,8 +96,6 @@ h3 {
 h4 {
   font-family: "gilroy heading";
   font-size: clamp(0.5em, 22px, 1rem);
-
-  /* font-size: 22px; */
 }
 
 h5 {
@@ -133,13 +131,11 @@ a {
 
 .title-block-3 {
   font-family: "gilroy heading";
-  /* font-size: 35px; */
   font-size: clamp(35px, 3.7vw, 4rem);
 }
 
 .title-block-6 {
   font-family: "gilroy heading";
-  /* font-size: 35px; */
   font-size: clamp(35px, 3vw, 3rem);
 }
 
@@ -184,7 +180,6 @@ button {
 }
 
 address {
-  /* font-size: 12px; */
   font-family: "gilroy timestamp";
   font-size: clamp(0.875rem, 1.5vw, 0.875rem);
 }
