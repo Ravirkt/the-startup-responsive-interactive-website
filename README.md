@@ -47,14 +47,17 @@ Enkele voorbeelden van de verschillende secties:
 ### Responsive
 De website is ontwikkeld volgens het mobile-first principe. Vervolgens heb ik de site responsive gemaakt door de verschillende breakpoints te onderzoeken en vervolgens door het gebruik van media queries,clamp en auto grid layouts heb ik de layout aangepast voor verschillende schermgroottes.
 
-<video src="./Assets/readme-assets/screen-capture.webm" alt="breakpoints" width="400px">
-
-
-
-
+[Demonstratie van enkele breakpoints](./Assets/readme-assets/Screen%20Recording%202025-01-23%20at%2000.23.44.mp4)
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+
+
+<!-- ### Ontwerpkeuzes
+Op de pagina heb ik twee interacties gemaakt, namelijk de scrollbutton en de navbar die verdwijnt en verschijnt door het scrollen.
+
+#### scrollbutton
+Deze button is bedoeld voor als de gebruiker helemaal onderaan de pagina is en rechtstreeks weer helemaal naar boven wilt gaan. Het design van de button kwam vanuit de opdrachtgever. -->
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
