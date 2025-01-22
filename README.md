@@ -61,10 +61,17 @@ Op de homepagina heb ik de HTML zo geschreven dat het duidelijk is wat elk onder
 
 Ik heb de verschillende secties van de pagina verdeeld in zogenoemde "content-blocks". Hierdoor heb ik ervoor gezorgt dat elke sectie van elkaar is gescheiden wat ervoor zorgt dat de code gemakkelijk hergebruikt -of gestructureerd kan worden. Met een comment heb ik ook alle onderdelen genummerd voor extra duidelijkheid.
 
+[index]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/index.html#L1))
+
+
 ### Css
 het belangrijkste van de Css code was het maken van de layout. Dit heb ik voornamelijk gedaan met `display: grid;` gecombineerd met `display: flex`. Ook heb ik bij secties waar elementen buiten de grid vallen `position` gebruikt.
 
-Ik heb twee Css files. De ene is voor styling van de homepagina en de andere file is de styleguide. Hierin heb ik de algemene styling en huistijl propertys van de pagina. Hier kun je bijvoorbeeld de algemene styling vinden van de buttons of van de headers.
+Ik heb twee Css files. De ene is voor styling van de homepagina en de andere file is de styleguide. Hierin heb ik de algemene styling en huistijl properties van de pagina. Hier kun je bijvoorbeeld de algemene styling vinden van de buttons of van de headings.
+
+[Styleguide]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styleguide.css#L1))
+[Stylesheet]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1))
+
 
 ### Javascript
 Met Javascript heb ik een aantal interacties gemaakt, namelijk de scrollbutton aan het einde van de pagina en de navbar die verdwijnt en verschijnt door de een scroll event.
@@ -121,8 +128,6 @@ function scrollUpDown() {
     nav.classList.remove("hide-nav");
   }
 
-
-
 // Dit is voor de background color van de navbar
   if (window.scrollY > 1) {
     nav.classList.add("color-nav");
@@ -139,8 +144,6 @@ Met een if statement ga ik nu controleren of de waarde van `lastScrollY` kleiner
 De waarde naar beneden scrollen is groter dan naar boven scrollen. Wanneer je de page refreshed zijn beide waardes nul.
 
 `lastScrollY = window.scrollY;`. Aan het einde van de functie komt deze regel code. Deze code slaat de huidige waarde van `window.scrollY` op in de variabele `lastScrollY`, zodat deze waarde weer gebruikt kan worden wanneer er weer gescrollt wordt.
-
-------
 
 Met een if statement ga ik nu controleren of de waarde van `window.scrollY` groter is dan 1. Als dat wel het geval is wordt de class `color-nav` toegevoegt. Is de waarde van `window.scrollY` groter, zal de class removed worden.
 
@@ -162,20 +165,73 @@ De background achter de navbar heb ik bedacht omdat de navbar witte elementen he
 ### ademruimte en inspringen
 Ik heb de verschillende sections onderverdeeld in content blokken, zodat elke sectie in de webpagina gescheiden is van elkaar. 
 
-Elke sectie wordt gescheiden door een html comment met daarin welke contentblok het is. De inline-elementen houdt ik op 1 regel en de block-elementen sluit ik on de volgende regel.
+Elke sectie wordt gescheiden door een html comment met daarin welke contentblok het is.
 
-child-elementen in een section scheid ik ook met een regel.
+- Inspringen: 1 tab;
+- Block-elementen: Op meerdere regels
+- Inline-elementen: Op dezelfde regels, tenzij de regel heel lang is.
 
-Namen voor bijvoorbeeld classes en id's schrijf ik met een strepje tussen elke woord. bijvoorbeeld: "header-name"
+Voorbeeld in Html:
+
+```html
+<div class="ham-menu" aria-label="Open het navigatiemenu" tabindex="0" role="button">
+    <span class="bar-1 hover" aria-hidden="true"></span>
+    <span class="bar-2 hover" aria-hidden="true"></span>
+    <span class="bar-3 hover" aria-hidden="true"></span>
+</div>
+```
 
 
-### css Volgorde en nesten van CSS selectors
-De volgorde van de c
+### Volgorde en nesten van CSS selectors
+- De css selectors hebben dezelfde structuur als de volgorde van de html code. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1))
+- De css wordt geformateerd met de vscode shortcut. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1))
+- De verschillende contentblokken worden gescheiden met een comment. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L11))
+
 
 ### Nesten van media queries
-De css elementen nest ik op logische volgorde. Hiebij let ik op dat de media queries van klein naar grotere schermen genest zijn.
+- De media queries zijn genest in betreffende element. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L938-L958))
+- De css elementen nest ik op logische volgorde, van klein naar groot. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L829-L840))
+
+Voorbeeld van @media query:
+
+```css
+header {
+  height: 90vh;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.5em;
+
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1.5em;
+    height: 70vh;
+  }
+
+  @media (min-width: 1024px) {
+    height: 100vh;
+  }
+}
+```
 
 ### Naamgeving
+
+#### Html en Css
+- De namen geven een duidelijke beschrijving van het element.
+- Voor namen van bijvoorbeeld classes en id's gebruik ik kebab case, waarbij ik een streepje tussen elk woord zet, bijvoorbeeld: 'header-name'.
+  - css [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L812))
+  - html [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/index.html#L286))
+
+#### Javascript
+- De namen geven een duidelijke beschrijving van het element.
+- Bij namen van bijvoorbeeld variabelen in Javascript gebruikt ik Camelcase. Hier begint het eerste woord zonder hoofdletter en de rest wel.
+  - js [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/javascript/javascript.js#L1))
+
+
+
 
 
 
