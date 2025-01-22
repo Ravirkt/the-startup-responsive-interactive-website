@@ -1,9 +1,4 @@
-Ontwerp en maak een responsive website voor een startup.
-
-De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
-
-# Titel
-Informaat revising
+# Sprint 6 - Informaat
 
 ### informaat
 Informaat is een bedrijf dat zich richt op het ontwerpen van digitale producten zoals websites en apps. Ze maken UX-concepten die goed functioneren en toegankelijk zijn om te gebruiken. Het bedrijf houdt zich ook bezig met UI-concepten om het product er mooi en aantrekkelijk uit te laten zien. Hierbij gebruiken ze verschillende frontendprincipes.
@@ -18,7 +13,6 @@ In de UX wereld is het belangrijk om vernieuwende designs te blijven produceren 
 - De huisstyle van informaat moet behouden worden.
 - Er mag afgeweken worden van het design, maar met onderbouwing waarom.
 - De website moet een werkende interactie hebben
-
 
 
 ## Beschrijving
