@@ -44,7 +44,10 @@ Enkele voorbeelden van de verschillende secties:
   </figure>
 
 
-De homepagina heeft een aantal interactieve elementen, waaronder een scrollbutton en navbar die verdwijnt en verschijnt bij scrollen.
+### Responsive
+De website is ontwikkeld volgens het mobile-first principe. Vervolgens heb ik de site responsive gemaakt door de verschillende breakpoints te onderzoeken en vervolgens door het gebruik van media queries,clamp en auto grid layouts heb ik de layout aangepast voor verschillende schermgroottes.
+
+<video src="./Assets/readme-assets/screen-capture.webm" alt="breakpoints" width="400px">
 
 
 
