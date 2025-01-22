@@ -69,7 +69,7 @@ het belangrijkste van de Css code was het maken van de layout. Dit heb ik voorna
 
 Ik heb twee Css files. De ene is voor styling van de homepagina en de andere file is de styleguide. Hierin heb ik de algemene styling en huistijl properties van de pagina. Hier kun je bijvoorbeeld de algemene styling vinden van de buttons of van de headings.
 
-[Styleguide](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styleguide.css#L1)
+[Styleguide](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styleguide.css#L1)<br>
 [Stylesheet](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1)
 
 
@@ -104,6 +104,9 @@ In `window.scrollTo` geeft window de venster van de browser aan en `scrollTo` is
 #### scroll navbar
 
 Om de gebruiker meer ruimte te geven om de content op de website te zien heb ik met Javascript ervoor gezorgt dat de navbar automatisch verdwijnt en verschijnt als je naar boven en beneden scrollt.
+
+[Code js navbar scroll](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/5bf89787b257de72cba88987a5811b5f9edf4173/javascript/javascript.js#L22-L48)
+
 
 Met de `document.querySelector` heb ik de navigatiebar met de class: `(".navbar")` gevonden, omdat ik dit element wil manipuleren. Het navbar element sla ik vervolgens op in de variabele: `const nav`.
 
@@ -148,14 +151,6 @@ De waarde naar beneden scrollen is groter dan naar boven scrollen. Wanneer je de
 Met een if statement ga ik nu controleren of de waarde van `window.scrollY` groter is dan 1. Als dat wel het geval is wordt de class `color-nav` toegevoegt. Is de waarde van `window.scrollY` groter, zal de class removed worden.
 
 De background achter de navbar heb ik bedacht omdat de navbar witte elementen heeft. De content van de site bevat veel lichte kleuren. Voor de gebruiker is de navbar dus niet duidelijk zichtbaar op bepaalde punten in de website.
-
-
-
-
-
-
-
-
 
 
 <!-- ------- code conventions -->
