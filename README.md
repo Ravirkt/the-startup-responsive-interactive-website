@@ -61,7 +61,7 @@ Op de homepagina heb ik de HTML zo geschreven dat het duidelijk is wat elk onder
 
 Ik heb de verschillende secties van de pagina verdeeld in zogenoemde "content-blocks". Hierdoor heb ik ervoor gezorgt dat elke sectie van elkaar is gescheiden wat ervoor zorgt dat de code gemakkelijk hergebruikt -of gestructureerd kan worden. Met een comment heb ik ook alle onderdelen genummerd voor extra duidelijkheid.
 
-[index]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/index.html#L1))
+[html](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/index.html#L1)
 
 
 ### Css
