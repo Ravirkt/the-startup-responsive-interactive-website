@@ -22,6 +22,38 @@ In de UX wereld is het belangrijk om vernieuwende designs te blijven produceren 
 
 
 ## Beschrijving
+De homepagina is het visitekaartje van het bedrijf. Hier kunnen partners en toekomstige klanten meer te weten komen over het bedrijf Informaat.
+
+De homepagina bestaat uit een aantal secties. Je hebt de gebruikelijke elementen waaronder de navigatiebar en footer, maar ook de main content. De main content gaat voornamelijk over wie Informaat is, wat het doet, waar het voor staat en enkele voorbeelden van organisaties waarvoor ze gewerkt hebben.
+
+Enkele voorbeelden van de verschillende secties:
+
+<div style="display: flex;">
+  <figure style="text-align: center;">
+    <img src="./Assets/readme-assets/hero-sectie.jpg" alt="Hero-sectie" width="200px">
+    <figcaption>Hero-sectie</figcaption>
+  </figure>
+
+  <figure style="text-align: center;">
+    <img src="./Assets/readme-assets/inzichten.jpg" alt="Inzichten" width="200px">
+    <figcaption>Inzichten</figcaption>
+  </figure>
+
+  <figure style="text-align: center;">
+    <img src="./Assets/readme-assets/footer.jpg" alt="Footer" width="200px">
+    <figcaption>Footer</figcaption>
+  </figure>
+
+  <figure style="text-align: center;">
+    <a href="https://www.jouwdomein.com">
+        <img src="./Assets/readme-assets/hero-sectie.jpg" alt="Footer"width="200px">
+    </a>
+    <figcaption>Live link</figcaption>
+  </figure>
+</div>
+
+
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
