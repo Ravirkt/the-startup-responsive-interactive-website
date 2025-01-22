@@ -818,7 +818,7 @@ align-self: last baseline;
 
 .content-block-8 {
   background-color: var(--bg-color-3);
-  height: 100vh;
+  height: 105vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr) 3em;
   grid-template-rows: 1fr 1fr 1fr 1fr;
