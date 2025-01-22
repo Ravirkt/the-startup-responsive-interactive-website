@@ -28,16 +28,16 @@ window.addEventListener("scroll", scrollUpDown);
 function scrollUpDown() {
   
   if (lastScrollY < window.scrollY) {
-    nav.classList.add("nav--hidden");
+    nav.classList.add("hide-nav");
   } else {
-    nav.classList.remove("nav--hidden");
+    nav.classList.remove("hide-nav");
   }
 
 
   if (window.scrollY > 1) {
-    nav.classList.add("nav--scrolled");
+    nav.classList.add("color-nav");
   } else {
-    nav.classList.remove("nav--scrolled");
+    nav.classList.remove("color-nav");
   }
 
   lastScrollY = window.scrollY;
