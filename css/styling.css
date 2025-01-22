@@ -183,7 +183,7 @@ header {
     position: relative;
     z-index: 2;
     top: -1.5em;
-    right: -3em;
+    right: -25rem;
   }
 }
 
@@ -207,7 +207,7 @@ header {
     position: relative;
     z-index: 2;
     top: -6em;
-    right: -12em;
+    right: -25rem;
   }
 }
 
@@ -229,7 +229,7 @@ header {
     position: relative;
     z-index: 2;
     top: -6em;
-    right: -15em;
+    right: -25rem;
   }
 }
 
@@ -255,7 +255,8 @@ header {
   }
 
   @media (min-width: 1300px) {
-    bottom: 7em;
+    top: -2.5em;
+    bottom: 0;
     right: -1.5em;
     padding: 0;
     margin: 0;
