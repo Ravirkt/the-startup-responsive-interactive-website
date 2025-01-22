@@ -28,31 +28,23 @@ De homepagina bestaat uit een aantal secties. Je hebt de gebruikelijke elementen
 
 Enkele voorbeelden van de verschillende secties:
 
-<div style="display: flex; gap: 20px;">
-  <figure style="display: flex; flex-direction: column; text-align: center;">
+  <figure style="display: inline-block; text-align: center; margin-right: 10px;">
     <img src="./Assets/readme-assets/hero-sectie.jpg" alt="Hero-sectie" width="200px">
     <figcaption>Hero-sectie</figcaption>
   </figure>
 
-  <figure style="display: flex; flex-direction: column; text-align: center;">
+  <figure style="display: inline-block; text-align: center; margin-right: 10px;">
     <img src="./Assets/readme-assets/inzichten.jpg" alt="Inzichten" width="200px">
     <figcaption>Inzichten</figcaption>
   </figure>
 
-  <figure style="display: flex; flex-direction: column; text-align: center;">
+  <figure style="display: inline-block; text-align: center; margin-right: 10px;">
     <img src="./Assets/readme-assets/footer.jpg" alt="Footer" width="200px">
     <figcaption>Footer</figcaption>
   </figure>
 
-  <br>
 
-  <figure style="display: flex; flex-direction: column; text-align: center;">
-    <a href="">
-      <img src="./Assets/readme-assets/hero-sectie.jpg" alt="Footer" width="200px">
-    </a>
-    <figcaption>Live link</figcaption>
-  </figure>
-</div>
+De homepagina heeft een aantal interactieve elementen, waaronder een scrollbutton en navbar die verdwijnt en verschijnt bij scrollen.
 
 
 
@@ -63,6 +55,105 @@ Enkele voorbeelden van de verschillende secties:
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+
+### Html
+Op de homepagina heb ik de HTML zo geschreven dat het duidelijk is wat elk onderdeel van de pagina doet. Ik heb semantische HTML gebruikt, hierdoor is het makkelijker voor zowel mensen als zoekmachines om de gegevens te begrijpen.
+
+Ik heb de verschillende secties van de pagina verdeeld in zogenoemde "content-blocks". Hierdoor heb ik ervoor gezorgt dat elke sectie van elkaar is gescheiden wat ervoor zorgt dat de code gemakkelijk hergebruikt -of gestructureerd kan worden. Met een comment heb ik ook alle onderdelen genummerd voor extra duidelijkheid.
+
+### Css
+het belangrijkste van de Css code was het maken van de layout. Dit heb ik voornamelijk gedaan met `display: grid;` gecombineerd met `display: flex`. Ook heb ik bij secties waar elementen buiten de grid vallen `position` gebruikt.
+
+Ik heb twee Css files. De ene is voor styling van de homepagina en de andere file is de styleguide. Hierin heb ik de algemene styling en huistijl propertys van de pagina. Hier kun je bijvoorbeeld de algemene styling vinden van de buttons of van de headers.
+
+### Javascript
+Met Javascript heb ik een aantal interacties gemaakt, namelijk de scrollbutton aan het einde van de pagina en de navbar die verdwijnt en verschijnt door de een scroll event.
+
+#### scrollbutton
+Als een gebruiker aan het scrollen is door de website en uiteindelijk aan het einde van de website is. De gebruiker wilt weer naar boven scrollen. Door op de button te klikken wordt de gebruiker automatisch naar boven gescrollt.
+
+[js code scrollbutton]([URL](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/8616d6ffd3a676e1c5d21e658d0e15e6c29833b1/javascript/javascript.js#L1-L11))
+
+
+Met de `document.querySelector` heb ik de button met de class: `("scroll-up-button")` gevonden. Deze button sla ik vervolgens op in de variabele: `const scrollUpButton`.
+
+`scrollUpButton.addEventListener("click", scrollUp)` Met deze regel code koppel ik een click eventListener aan de button. Ook heb ik een functie meegegeven genaamd: `scrollUp`. Als er op de button wordt gedrukt zal de functie `scrollUp` uitgevoerd worden.
+
+```javascript
+const scrollUpButton = document.querySelector(".scroll-up-button");
+scrollUpButton.addEventListener("click", scrollUp)
+
+function scrollUp () {
+
+  window.scrollTo({
+    top: 0, 
+    behavior: "smooth" 
+  });
+}
+```
+
+In `window.scrollTo` geeft window de venster van de browser aan en `scrollTo` is een Javascript method waarmee je naar een bepaalde positie kan scrollen. Je kan hier verschillende globale en specifieke waardes voor opgeven. Om verticaal naar boven te scrollen gebruik ik `top: 0`. Met `behavior: "smooth"` zorg ik ervoor dat de scrollbeweging soepel verloopt.
+
+#### scroll navbar
+
+Om de gebruiker meer ruimte te geven om de content op de website te zien heb ik met Javascript ervoor gezorgt dat de navbar automatisch verdwijnt en verschijnt als je naar boven en beneden scrollt.
+
+Met de `document.querySelector` heb ik de navigatiebar met de class: `(".navbar")` gevonden, omdat ik dit element wil manipuleren. Het navbar element sla ik vervolgens op in de variabele: `const nav`.
+
+Vervolgens heb ik de variabele `let lastScrollY`. In deze variabele wil ik met `window.scrollY` de huidige scrollpositie bewaren.
+
+`window.addEventListener("scroll", scrollUpDown)` Met deze regel code koppel ik een scroll eventListener aan de `window`. Dit moet op de window omdat het scrollen gebeurt in de window. Ook heb ik een functie meegegeven genaamd: `scrollUpDown`. Als er wordt gescrollt zal de functie `crollUpDown` uitgevoerd worden.
+
+
+
+```javascript
+const nav = document.querySelector(".navbar");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", scrollUpDown);
+
+function scrollUpDown() {
+  
+//   Dit is voor het verbergen en verschijnen van navabr
+  if (lastScrollY < window.scrollY) {
+    nav.classList.add("hide-nav");
+  } else {
+    nav.classList.remove("hide-nav");
+  }
+
+
+
+// Dit is voor de background color van de navbar
+  if (window.scrollY > 1) {
+    nav.classList.add("color-nav");
+  } else {
+    nav.classList.remove("color-nav");
+  }
+
+  lastScrollY = window.scrollY;
+}
+```
+
+Met een if statement ga ik nu controleren of de waarde van `lastScrollY` kleiner is dan `window.scrollY`. Als dat wel het geval is wordt de class `hide-nav` toegevoegt. Is de waarde van `lastScrollY` groter, zal de class removed worden.
+
+De waarde naar beneden scrollen is groter dan naar boven scrollen. Wanneer je de page refreshed zijn beide waardes nul.
+
+`lastScrollY = window.scrollY;`. Aan het einde van de functie komt deze regel code. Deze code slaat de huidige waarde van `window.scrollY` op in de variabele `lastScrollY`, zodat deze waarde weer gebruikt kan worden wanneer er weer gescrollt wordt.
+
+------
+
+Met een if statement ga ik nu controleren of de waarde van `window.scrollY` groter is dan 1. Als dat wel het geval is wordt de class `color-nav` toegevoegt. Is de waarde van `window.scrollY` groter, zal de class removed worden.
+
+De background achter de navbar heb ik bedacht omdat de navbar witte elementen heeft. De content van de site bevat veel lichte kleuren. Voor de gebruiker is de navbar dus niet duidelijk zichtbaar op bepaalde punten in de website.
+
+
+
+
+
+
+
+
+
 
 <!-- ------- code conventions -->
 
