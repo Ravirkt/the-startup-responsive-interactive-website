@@ -44,8 +44,10 @@ Enkele voorbeelden van de verschillende secties:
     <figcaption>Footer</figcaption>
   </figure>
 
+  <br>
+
   <figure style="display: flex; flex-direction: column; text-align: center;">
-    <a href="https://www.jouwdomein.com">
+    <a href="">
       <img src="./Assets/readme-assets/hero-sectie.jpg" alt="Footer" width="200px">
     </a>
     <figcaption>Live link</figcaption>
