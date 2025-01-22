@@ -69,8 +69,8 @@ het belangrijkste van de Css code was het maken van de layout. Dit heb ik voorna
 
 Ik heb twee Css files. De ene is voor styling van de homepagina en de andere file is de styleguide. Hierin heb ik de algemene styling en huistijl properties van de pagina. Hier kun je bijvoorbeeld de algemene styling vinden van de buttons of van de headings.
 
-[Styleguide]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styleguide.css#L1))
-[Stylesheet]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1))
+[Styleguide](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styleguide.css#L1)
+[Stylesheet](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1)
 
 
 ### Javascript
@@ -79,7 +79,7 @@ Met Javascript heb ik een aantal interacties gemaakt, namelijk de scrollbutton a
 #### scrollbutton
 Als een gebruiker aan het scrollen is door de website en uiteindelijk aan het einde van de website is. De gebruiker wilt weer naar boven scrollen. Door op de button te klikken wordt de gebruiker automatisch naar boven gescrollt.
 
-[js code scrollbutton]([URL](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/8616d6ffd3a676e1c5d21e658d0e15e6c29833b1/javascript/javascript.js#L1-L11))
+[js code scrollbutton](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/8616d6ffd3a676e1c5d21e658d0e15e6c29833b1/javascript/javascript.js#L1-L11)
 
 
 Met de `document.querySelector` heb ik de button met de class: `("scroll-up-button")` gevonden. Deze button sla ik vervolgens op in de variabele: `const scrollUpButton`.
@@ -183,14 +183,14 @@ Voorbeeld in Html:
 
 
 ### Volgorde en nesten van CSS selectors
-- De css selectors hebben dezelfde structuur als de volgorde van de html code. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1))
-- De css wordt geformateerd met de vscode shortcut. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1))
-- De verschillende contentblokken worden gescheiden met een comment. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L11))
+- De css selectors hebben dezelfde structuur als de volgorde van de html code. [Voorbeeld](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1)
+- De css wordt geformateerd met de vscode shortcut. [Voorbeeld](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L1)
+- De verschillende contentblokken worden gescheiden met een comment. [Voorbeeld](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L11)
 
 
 ### Nesten van media queries
-- De media queries zijn genest in betreffende element. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L938-L958))
-- De css elementen nest ik op logische volgorde, van klein naar groot. [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L829-L840))
+- De media queries zijn genest in betreffende element. [Voorbeeld](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L938-L958)
+- De css elementen nest ik op logische volgorde, van klein naar groot. [Voorbeeld](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L829-L840)
 
 Voorbeeld van @media query:
 
@@ -222,13 +222,13 @@ header {
 #### Html en Css
 - De namen geven een duidelijke beschrijving van het element.
 - Voor namen van bijvoorbeeld classes en id's gebruik ik kebab case, waarbij ik een streepje tussen elk woord zet, bijvoorbeeld: 'header-name'.
-  - css [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L812))
-  - html [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/index.html#L286))
+  - css [Voorbeeld](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/css/styling.css#L812)
+  - html [Voorbeeld](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/index.html#L286)
 
 #### Javascript
 - De namen geven een duidelijke beschrijving van het element.
 - Bij namen van bijvoorbeeld variabelen in Javascript gebruikt ik Camelcase. Hier begint het eerste woord zonder hoofdletter en de rest wel.
-  - js [Voorbeeld]([url](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/javascript/javascript.js#L1))
+  - js [Voorbeeld](https://github.com/Ravirkt/the-startup-responsive-interactive-website/blob/9b3cf2dbbaccc5dd87937c09d5bded87f3c9885e/javascript/javascript.js#L1)
 
 
 
