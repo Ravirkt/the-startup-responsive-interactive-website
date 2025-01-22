@@ -28,29 +28,30 @@ De homepagina bestaat uit een aantal secties. Je hebt de gebruikelijke elementen
 
 Enkele voorbeelden van de verschillende secties:
 
-<div style="display: flex;">
-  <figure style="text-align: center;">
+<div style="display: flex; gap: 20px;">
+  <figure style="display: flex; flex-direction: column; text-align: center;">
     <img src="./Assets/readme-assets/hero-sectie.jpg" alt="Hero-sectie" width="200px">
     <figcaption>Hero-sectie</figcaption>
   </figure>
 
-  <figure style="text-align: center;">
+  <figure style="display: flex; flex-direction: column; text-align: center;">
     <img src="./Assets/readme-assets/inzichten.jpg" alt="Inzichten" width="200px">
     <figcaption>Inzichten</figcaption>
   </figure>
 
-  <figure style="text-align: center;">
+  <figure style="display: flex; flex-direction: column; text-align: center;">
     <img src="./Assets/readme-assets/footer.jpg" alt="Footer" width="200px">
     <figcaption>Footer</figcaption>
   </figure>
 
-  <figure style="text-align: center;">
+  <figure style="display: flex; flex-direction: column; text-align: center;">
     <a href="https://www.jouwdomein.com">
-        <img src="./Assets/readme-assets/hero-sectie.jpg" alt="Footer"width="200px">
+      <img src="./Assets/readme-assets/hero-sectie.jpg" alt="Footer" width="200px">
     </a>
     <figcaption>Live link</figcaption>
   </figure>
 </div>
+
 
 
 
