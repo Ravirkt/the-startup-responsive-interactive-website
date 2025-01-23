@@ -292,7 +292,6 @@ header {
   }
 }
 
-/* de progressbar van de media button moet nog uitzoeken hoe ik dit moet fiksen  */
 .media-button::before {
   content: "";
   position: absolute;
@@ -756,7 +755,7 @@ header {
 
 .content-block-7-title {
   grid-column: 1 / -1;
-align-self: last baseline;
+  align-self: last baseline;
 }
 
 /* child containers */
