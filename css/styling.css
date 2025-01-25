@@ -915,6 +915,7 @@ header {
   width: 10em;
   height: 3em;
   align-self: last baseline;
+  cursor: pointer;
 
   /* voor positioneren scroll-button rechtsonder */
   position: relative;
