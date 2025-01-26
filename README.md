@@ -46,6 +46,8 @@ De website is ontwikkeld volgens het mobile-first principe. Vervolgens heb ik de
 
 [Demonstratie van enkele breakpoints](./Assets/readme-assets/Screen%20Recording%202025-01-23%20at%2000.23.44.mp4)
 
+Demonstratie scrollbutton, breakpoints header en navbar: https://ravirkt.github.io/i-love-web/videos.html
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
